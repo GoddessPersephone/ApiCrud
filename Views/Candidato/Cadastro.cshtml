@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Candidato";
+}
+
+<div class="text-center">
+
+    <div class="d-grid gap-2 d-md-flex justfy-content-md-start">
+        <a class="btn btn-primary"role="button" asp-controller="Candidato" asp-action="Criar">Adicionar um novo Candidato</a>
+    </div>
+    <br />
+<h1 class="display-4">Cadastro de Candidatos</h1>
+
+<hr />
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Email</th>
+      <th scope="col">Telefone</th>
+      <th scope="col">Conhecimentos</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Joana</td>
+      <td>jana007@gmail.com</td>
+      <td>990099</td>
+      <td>Python</td>
+      <td>
+          <div class="btn-group" role="group">
+                <a role="button" class="btn btn-warning"asp-controller="Candidato"asp-action="Editar">Editar</a>
+                <a role="button" class="btn btn-secondary"asp-controller="Candidato"asp-action="ApagarConfirmacao">Apagar</a>
+          </div>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Melissa</td>
+      <td>mel2205@yaho.com</td>
+      <td>8899987</td>
+      <td>JavaScript</td>
+       <td>
+          <div class="btn-group" role="group">
+                <a role="button" class="btn btn-warning"asp-controller="Candidato"asp-action="Editar">Editar</a>
+                <a role="button" class="btn btn-secondary"asp-controller="Candidato"asp-action="ApagarConfirmacao">Apagar</a>
+          </div>
+      </td>
+    </tr>
+    <tr>
+     <th scope="row">3</th>
+     <td>Lara</td>
+      <td>leal22945@gmail.com</td>
+      <td>5566789</td>
+      <td>NodeJs</td>
+       <td>
+          <div class="btn-group" role="group">
+                <a role="button" class="btn btn-warning"asp-controller="Candidato"asp-action="Editar">Editar</a>
+                <a role="button" class="btn btn-secondary"asp-controller="Candidato"asp-action="ApagarConfirmacao">Apagar</a>
+          </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
